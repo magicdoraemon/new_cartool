@@ -47,50 +47,28 @@ class CustomView: NSView {
         }
         
         let pb = sender.draggingPasteboard
-        
         let types = pb.types
-        
         if types?.contains(NSPasteboard.PasteboardType.fileURL) ?? false {
-            
             let items = pb.pasteboardItems
-            
             if items?.count == 1{
-                
                 let item = items?.first
-                
                 let path = item?.string(forType: NSPasteboard.PasteboardType.fileURL)
-                
                 guard let str = URL(string: path!)?.absoluteString else{
                     return
                 }
-                
                 let index = str.index(str.startIndex, offsetBy: 7)
-                
                 let filePath = String(str[index..<str.endIndex])
-                
                 dragEndBlock?(filePath)
-                
             } else {
-                
                 let alert = NSAlert()
-                
                 alert.messageText = "别拖太多的文件，只拖一个.car文件"
-                
                 alert.runModal()
-                
             }
-            
         }
-        
     }
-    
-    
     
     override func performDragOperation(_ sender: NSDraggingInfo) -> Bool {
         return true
     }
-    
-    
-    
-    
+
 }
