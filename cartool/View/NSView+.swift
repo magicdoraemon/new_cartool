@@ -13,18 +13,11 @@ extension NSView{
     func insertVisualEffectView(mode:NSVisualEffectView.BlendingMode){
         
         let vibrant = NSVisualEffectView(frame: bounds)
-        
         vibrant.autoresizingMask = [AutoresizingMask.width,AutoresizingMask.height]
-        
         vibrant.blendingMode = mode
-        
         vibrant.material = .light
-        
         vibrant.state = .active
-        
-        addSubview(vibrant, positioned: .below, relativeTo: nil)
-        
+        addSubview(vibrant, positioned: .below, relativeTo: nil) 
     }
-    
     
 }
