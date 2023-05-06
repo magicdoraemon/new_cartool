@@ -714,9 +714,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="700" height="400"/>
                             </visualEffectView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="28f-b3-JlB">
-                                <rect key="frame" x="300" y="170" width="100" height="100"/>
+                                <rect key="frame" x="310" y="180" width="80" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="1jI-26-n4z"/>
+                                    <constraint firstAttribute="width" constant="80" id="1jI-26-n4z"/>
                                     <constraint firstAttribute="width" secondItem="28f-b3-JlB" secondAttribute="height" multiplier="1:1" id="6cL-kl-mqj"/>
                                 </constraints>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="icon" id="L3Q-vO-PhT"/>
@@ -725,31 +725,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="700" height="400"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="96Z-Oy-Ar9">
-                                        <rect key="frame" x="-2" y="132" width="704" height="18"/>
+                                        <rect key="frame" x="-2" y="142" width="704" height="18"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="把Assets.car文件拖到这里" id="qEE-YH-jKq">
                                             <font key="font" size="15" name=".PingFangSC-Regular"/>
                                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oUO-YY-0P6">
-                                        <rect key="frame" x="-2" y="370" width="704" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="zPE-xp-elQ"/>
-                                        </constraints>
-                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="cartool" id="MdI-xe-f11" customClass="LYVerticalCenterTextFieldCell" customModule="cartool" customModuleProvider="target">
-                                            <font key="font" metaFont="system" size="17"/>
-                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                        </textFieldCell>
-                                    </textField>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="96Z-Oy-Ar9" firstAttribute="leading" secondItem="WJp-1f-NCl" secondAttribute="leading" id="6us-Gz-JiP"/>
-                                    <constraint firstAttribute="trailing" secondItem="96Z-Oy-Ar9" secondAttribute="trailing" id="GpC-cK-Ucy"/>
-                                    <constraint firstAttribute="trailing" secondItem="oUO-YY-0P6" secondAttribute="trailing" id="P2L-Lt-FMJ"/>
-                                    <constraint firstItem="oUO-YY-0P6" firstAttribute="leading" secondItem="WJp-1f-NCl" secondAttribute="leading" id="ml5-Fi-wRr"/>
-                                    <constraint firstItem="oUO-YY-0P6" firstAttribute="top" secondItem="WJp-1f-NCl" secondAttribute="top" id="nOD-Tq-ZUG"/>
                                 </constraints>
                             </customView>
                         </subviews>

@@ -12,8 +12,6 @@ class ViewController: NSViewController {
     
     @IBOutlet var mainView: NSView!
     
-    @IBOutlet weak var titleLbl: NSTextField!
-    
     @IBOutlet weak var dragView: CustomView!
     
     @IBOutlet weak var imageView: NSImageView!
