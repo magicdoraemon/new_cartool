@@ -11,7 +11,6 @@ import Cocoa
 @NSApplicationMain class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        
         NSApp.servicesProvider = ServiceHelper()
     }
 
@@ -22,7 +21,6 @@ import Cocoa
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         return true
     }
-
 
 }
 
