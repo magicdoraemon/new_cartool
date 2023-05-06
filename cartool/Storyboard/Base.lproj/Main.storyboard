@@ -725,9 +725,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="700" height="400"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="96Z-Oy-Ar9">
-                                        <rect key="frame" x="-2" y="142" width="704" height="18"/>
+                                        <rect key="frame" x="-2" y="141" width="704" height="19"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="把Assets.car文件拖到这里" id="qEE-YH-jKq">
-                                            <font key="font" size="15" name=".PingFangSC-Regular"/>
+                                            <font key="font" metaFont="system" size="15"/>
                                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
