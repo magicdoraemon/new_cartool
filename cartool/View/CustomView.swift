@@ -19,48 +19,29 @@ class CustomView: NSView {
         registerForDraggedTypes([NSPasteboard.PasteboardType.fileURL])
     }
     
-    
     override func draggingEntered(_ sender: NSDraggingInfo) -> NSDragOperation {
         
         dragExited = false
-        
         let pb = sender.draggingPasteboard
-        
         let types = pb.types
-        
         if types?.contains(NSPasteboard.PasteboardType.fileURL) ?? false {
-            
             let items = pb.pasteboardItems
-            
             for item in items!{
-                
                 let path = item.string(forType: NSPasteboard.PasteboardType.fileURL)
-                
                 let str = URL(string: path!)?.absoluteString
-                
                 if str?.hasSuffix(".car") ?? false{
-                    
                     return NSDragOperation.copy
-                    
                 }
-                
             }
-            
-            
         }
-        
         return []
-        
     }
-    
     
     override func draggingExited(_ sender: NSDraggingInfo?) {
         dragExited = true
     }
     
-    
     override func draggingEnded(_ sender: NSDraggingInfo) {
-        
         if dragExited {
             return
         }

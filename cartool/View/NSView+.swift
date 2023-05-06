@@ -10,8 +10,7 @@ import Cocoa
 
 extension NSView{
     
-    func insertVisualEffectView(mode:NSVisualEffectView.BlendingMode){
-        
+    func insertVisualEffectView(mode:NSVisualEffectView.BlendingMode) {
         let vibrant = NSVisualEffectView(frame: bounds)
         vibrant.autoresizingMask = [AutoresizingMask.width,AutoresizingMask.height]
         vibrant.blendingMode = mode
