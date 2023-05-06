@@ -725,9 +725,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="700" height="400"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="96Z-Oy-Ar9">
-                                        <rect key="frame" x="287" y="131" width="126" height="19"/>
-                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Drag .car file here" id="qEE-YH-jKq">
-                                            <font key="font" metaFont="system" size="15"/>
+                                        <rect key="frame" x="-2" y="132" width="704" height="18"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="把Assets.car文件拖到这里" id="qEE-YH-jKq">
+                                            <font key="font" size="15" name=".PingFangSC-Regular"/>
                                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -745,6 +745,8 @@
                                     </textField>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="96Z-Oy-Ar9" firstAttribute="leading" secondItem="WJp-1f-NCl" secondAttribute="leading" id="6us-Gz-JiP"/>
+                                    <constraint firstAttribute="trailing" secondItem="96Z-Oy-Ar9" secondAttribute="trailing" id="GpC-cK-Ucy"/>
                                     <constraint firstAttribute="trailing" secondItem="oUO-YY-0P6" secondAttribute="trailing" id="P2L-Lt-FMJ"/>
                                     <constraint firstItem="oUO-YY-0P6" firstAttribute="leading" secondItem="WJp-1f-NCl" secondAttribute="leading" id="ml5-Fi-wRr"/>
                                     <constraint firstItem="oUO-YY-0P6" firstAttribute="top" secondItem="WJp-1f-NCl" secondAttribute="top" id="nOD-Tq-ZUG"/>
