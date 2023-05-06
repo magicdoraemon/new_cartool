@@ -23,12 +23,9 @@ struct Shell {
         task.arguments = arguments
         // 2. 设置执行命令
         task.launchPath = cmd
-        
         // 3.  设置标准输出管道
         let outputPipe = Pipe()
-        
         task.standardOutput = outputPipe
-        
         // 在后台线程等待数据和通知
         outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
         
@@ -36,9 +33,7 @@ struct Shell {
             
             //获取管道数据 转为字符串
             let output = outputPipe.fileHandleForReading.availableData
-            
             let outputStr = String(data: output, encoding: .utf8) ?? ""
-            
             //在主线程处理UI
             DispatchQueue.main.async {
                 completion(outputStr) 
@@ -46,7 +41,6 @@ struct Shell {
         }
         // 开始执行
         task.launch()
-        
         // 等待直到执行结束
         // task.waitUntilExit()
     }
