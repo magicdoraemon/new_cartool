@@ -20,10 +20,8 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         mainView.wantsLayer = true
         mainView.layer?.backgroundColor = .clear
-        
         imageView.image?.isTemplate = true
         
         // mainView.insertVisualEffectView(mode: .behindWindow)
