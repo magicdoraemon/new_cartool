@@ -18,9 +18,7 @@ struct Shell {
      * return : 命令执行后的结果字符串
      */
     static func execmd(_ cmd: String, arguments: [String], completion: @escaping ((_ result:String) -> () )) {
-        
         let task = Process()
-        
         // 1. 设置命令的参数
         task.arguments = arguments
         // 2. 设置执行命令
@@ -43,20 +41,14 @@ struct Shell {
             
             //在主线程处理UI
             DispatchQueue.main.async {
-                
-                completion(outputStr)
-                
+                completion(outputStr) 
             }
-            
-            
         }
-        
         // 开始执行
         task.launch()
         
         // 等待直到执行结束
         // task.waitUntilExit()
-        
     }
     
 }
